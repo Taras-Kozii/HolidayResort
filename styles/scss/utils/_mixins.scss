@@ -212,3 +212,7 @@
     margin-bottom: 0.625rem;
   }
 }
+
+@mixin font-bodoni {
+  font-family: "Bodoni 72", sans-serif;
+}

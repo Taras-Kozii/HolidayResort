@@ -7,6 +7,7 @@
   left: 0;
   z-index: 50;
   transition: $transition-duraction;
+  pointer-events: none;
 
   &__content {
     width: 100%;
@@ -22,6 +23,7 @@
   &__logo {
     z-index: 5;
     @include position-r;
+    pointer-events: all;
   }
 }
 

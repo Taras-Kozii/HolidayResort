@@ -1,41 +1,48 @@
 @use "../utils/_index.scss" as *;
 
-.title {
-  font-family: $font-family;
-  font-weight: 600;
-  letter-spacing: -0.05em;
+.section-title {
+  font-weight: 400;
+  line-height: 1;
   color: $text-color-main;
-  @include adaptive-property(font-size, 4.25, 3, 3, rem);
-  @include adaptive-property(margin-bottom, 24, 8, 4);
-  @include adaptive-property(line-height, 3, 3.5, 4.125, rem);
+  @include adaptive-property(font-size, 2, 0, 4, rem);
+  @include font-bodoni;
 }
 
 .subtitle {
-  font-family: $font-family;
-  line-height: 150%;
-  color: $text-color-main;
-  @include adaptive-property(font-size, 1.5, 2.5, 2.5, rem);
+  letter-spacing: 5%;
+  margin-bottom: 30px;
+  text-align: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    background-color: $bg-color-red;
+  }
 }
 
 //=================================BUTTON=============================
 .button {
-  width: min(100%, 480px);
+  width: fit-content;
   position: relative;
   left: 0;
-  right: 0;
-  padding-block: 1rem;
+  top: 0;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #2b9ee7;
+  color: $bg-color-main;
 
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 150%;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 5%;
+  color: $bg-color-main;
+  text-align: center;
 
-  border-radius: 20px;
-  border: 2px solid #6cafd9;
-  background: #c9e4ea;
+  border-radius: $radius;
+  border: 2px solid $bg-color-red;
+  background: $bg-color-red;
   transition: $transition-duraction;
   cursor: pointer;
   z-index: 1;
