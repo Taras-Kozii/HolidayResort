@@ -86,6 +86,27 @@ h6 {
   font-size: inherit;
 }
 
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/SourceSemibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/SourceRegular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni 72";
+  src: url("/fonts/Bodoni.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --primary: #000;
 }
@@ -106,7 +127,7 @@ h6 {
   width: 150%;
   height: 300%;
   border-radius: 50%;
-  background-color: #4f4f54;
+  background-color: #0a0a0a;
   z-index: -1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -421,8 +442,8 @@ h6 {
 .page {
   min-width: 320px;
   color: #000;
-  font-family: "";
-  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
   background-color: #fff;
   overflow-x: clip;
 }
@@ -456,23 +477,14 @@ h6 {
 }
 
 [class*=__container] {
-  max-width: 1200px;
+  max-width: 1054px;
   padding-inline: 15px;
   margin-inline: auto;
   overflow-x: clip;
 }
 
-.link {
-  display: inline-block;
-  font-size: 20px;
-  color: #530808;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 200px;
-}
-
 .title {
-  font-family: "";
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   letter-spacing: -0.05em;
   color: #000;
@@ -512,7 +524,7 @@ h6 {
 }
 
 .subtitle {
-  font-family: "";
+  font-family: "Source Sans Pro", sans-serif;
   line-height: 150%;
   color: #000;
   font-size: calc(1.5rem + (1) * (100vw - 20rem) / (27.99875));

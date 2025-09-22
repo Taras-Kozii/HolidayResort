@@ -1,0 +1,40 @@
+fs - 16px
+section-title - 64px
+
+Bodoni 72	Book
+Source Sans Pro	Regular	28
+Source Sans Pro	SemiBold	12
+
+
+Font Family	Font Weight	Quantity	
+Bodoni 72	Book	5×	Select
+Source Sans Pro	Regular	28×	Select
+Source Sans Pro	SemiBold	12×	Select
+
+Font size	Quantity	
+16px	15×	Select
+20px	10×	Select
+24px	3×	Select
+28px	12×	Select
+64px	4×	Select
+96px	1×	Select
+
+#ffffff
+RGB: 255, 255, 255
+42
+Select
+#000000
+RGB: 0, 0, 0
+41
+Select
+#f5f5f5
+RGB: 245, 245, 245
+32
+Select
+#d9ad5e
+RGB: 217, 173, 94
+24
+Select
+#0a0a0a
+RGB: 10, 10, 10
+23
