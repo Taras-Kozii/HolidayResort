@@ -1,0 +1,10 @@
+@use "../utils/_index.scss" as *;
+
+.about {
+  &__text {
+    display: flex;
+    row-gap: 10px;
+    font-size: 1.25rem;
+    @include adaptive-property(font-size, 1, 0, 1.25, rem);
+  }
+}

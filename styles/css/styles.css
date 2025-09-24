@@ -107,10 +107,6 @@ h6 {
   font-style: normal;
   font-display: swap;
 }
-:root {
-  --primary: #000;
-}
-
 .fill-down-effect {
   position: relative;
   left: 0;
@@ -462,11 +458,10 @@ h6 {
 
 .subtitle {
   letter-spacing: 5%;
-  margin-bottom: 30px;
   text-align: center;
 }
-.subtitle::before {
-  content: "";
+
+.red-line {
   display: inline-block;
   width: 120px;
   height: 1px;
@@ -535,6 +530,26 @@ h6 {
      object-position: center;
 }
 
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 32px;
+  row-gap: 32px;
+}
+@media (max-width: 1440px) {
+  .section-header {
+    row-gap: calc(16px + (16) * (100vw - 320px) / (1120));
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -589,4 +604,13 @@ h6 {
   -webkit-transform: translateY(-30px);
       -ms-transform: translateY(-30px);
           transform: translateY(-30px);
+}
+
+.main > section {
+  padding-block: 64px;
+}
+@media (max-width: 1440px) {
+  .main > section {
+    padding-block: calc(30px + (34) * (100vw - 320px) / (1120));
+  }
 }
