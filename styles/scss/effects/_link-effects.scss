@@ -2,16 +2,15 @@
 
 //UNDERLINE
 .underline-show-center {
-  $before-height: 2px;
-  color: #000;
+  $before-height: 1px;
   cursor: pointer;
 
   span {
     position: relative;
-    color: #000;
 
     @include hover-pseudo("::before") {
       transform: translate(-50%, 0) scaleX(1);
+      background-color: $bg-color-red;
     }
   }
 
@@ -22,10 +21,10 @@
     bottom: 0;
     width: 100%;
     height: $before-height;
-    background-color: currentColor;
+    background-color: transparent;
     transform-origin: center;
     transform: translate(-50%, 0) scaleX(0);
-    transition: transform $transition-duraction ease-in-out;
+    transition: all 0.45s ease;
   }
 }
 

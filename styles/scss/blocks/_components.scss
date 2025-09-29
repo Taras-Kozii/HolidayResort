@@ -68,3 +68,24 @@
   row-gap: 32px;
   @include adaptive-property(row-gap, 16, 0, 32);
 }
+
+//===============================SOCIALS==========================
+.socials {
+  display: flex;
+  row-gap: 15px;
+  @include adaptive-property(column-gap, 18, 0, 32);
+
+  &__social {
+    img {
+      width: 32px;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      transition: scale $transition-duraction ease-in-out,
+        rotate $transition-duraction ease-in-out;
+      @include hover {
+        scale: 1.1;
+        rotate: -3deg;
+      }
+    }
+  }
+}

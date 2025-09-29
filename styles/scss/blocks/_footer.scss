@@ -1,2 +1,23 @@
 @use "../utils/_index" as *;
 
+.footer {
+  @include adaptive-property(padding-block, 38, 0, 64);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include adaptive-property(row-gap, 30, 0, 64);
+  }
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include adaptive-property(row-gap, 12, 0, 24);
+  }
+  a {
+    transition: color $transition-duraction ease-in-out;
+    @include hover {
+      color: $bg-color-red;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use "../utils/_index.scss" as *;
+
+.contact {
+  background-color: $bg-color-2;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include adaptive-property(row-gap, 30, 0, 64);
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include adaptive-property(row-gap, 18, 0, 32);
+  }
+  &__link {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    transition: color $transition-duraction ease-in-out;
+    @include hover {
+      color: $bg-color-red;
+    }
+    img {
+      width: 24px;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      transition: scale $transition-duraction ease-in-out,
+        rotate $transition-duraction ease-in-out;
+    }
+    @include hover-pseudo(" img") {
+      scale: 1.15;
+      rotate: -3deg;
+    }
+  }
+}
