@@ -1,10 +1,25 @@
 @use "../utils/_index.scss" as *;
 
 .about {
-  &__text {
+  &__content {
+    margin-inline: auto;
+    max-width: 600px;
     display: flex;
-    row-gap: 10px;
-    font-size: 1.25rem;
-    @include adaptive-property(font-size, 1, 0, 1.25, rem);
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+  }
+  &__text {
+    p:not(:last-child) {
+      margin-bottom: 0.625rem;
+    }
+    p {
+      line-height: 1.25; /* 25/20 */
+      text-align: center;
+      @include adaptive-property(font-size, 1, 0, 1.25, rem);
+    }
+  }
+  &__button {
+    @include adaptive-property(margin-bottom, 12, 0, 24);
   }
 }
